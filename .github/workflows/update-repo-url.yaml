@@ -20,6 +20,7 @@ jobs:
         with:
           find: "https://github.com/akuity-cluster-addons-workshop/control-plane-template"
           replace: "${{ github.server_url }}/${{ github.repository }}"
+          exclude: ".github/workflows/update-repo-url.yaml"
           regex: false
       - name: Commit files
         run: |
