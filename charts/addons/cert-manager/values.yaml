@@ -2,3 +2,4 @@
 # values must be under the `cert-manager` key.
 cert-manager:
   installCRDs: true
+replicaCount: 3  
